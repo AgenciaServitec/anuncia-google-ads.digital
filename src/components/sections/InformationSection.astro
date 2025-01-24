@@ -1,0 +1,52 @@
+---
+import BtnLink from "../shared/BtnLink.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="informationsection">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+        
+        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
+            <Title>
+                Ofrecemos una gama completa de servicios de marketing digital.
+            </Title>
+            <Paragraph className="mt-8">
+                Somos una agencia con experiencia en todas las dimensiones del marketing digital, utilizando estrategias, conociendo sus necesidades, involucrándonos para los mejores resultados para sus conversiones en gustos y preferencias de tu target.                
+            </Paragraph>
+           
+            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> MOTORES DE BUSQUEDA
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> PALABRAS CLAVES.
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> META TAGS.
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> CONTENIDO - ARQUITECTURA.
+                </li>
+            </ul>
+
+            <div class=" mt-8 lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0">
+                <BtnLink text="Consigue una cotizacion" href="#cta" className="flex justify-center w-full sm:w-max" variant="secondary"/>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+            <div class="w-full h-40 sm:h-80 midmd:h-full relative">
+                <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
+                <div class="absolute  p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+                
+                <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
+                <video controls src={"https://firebasestorage.googleapis.com/v0/b/sendingemails-348505.appspot.com/o/resources%2FWhatsApp%20Video%202022-06-23%20at%208.14.59%20PM.mp4?alt=media&token=2c657a72-c58a-4f39-8dca-fc7fa840b397"}
+                width="1240" height="1385"
+                class=" w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full" />
+            </div>
+        </div>
+    </Container>
+</section>

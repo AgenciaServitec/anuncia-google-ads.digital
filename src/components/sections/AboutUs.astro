@@ -1,5 +1,6 @@
 ---
 import Info from "../cards/Info.astro";
+import BtnLink from "../shared/BtnLink.astro";
 import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
@@ -28,11 +29,9 @@ import Title from "../shared/Title.astro";
                 Somos una empresa que brinda servicios informáticos de forma integral en la asesoría y consultoría en hardware y software, tanto para usuarios domésticos, negocios y empresas corporativas. Prestamos nuestros servicios en forma altamente personalizada, comprendiendo que cada empresa es única, creando una solución a la medida de tus necesidades. Logrando identificar y entender las necesidades de nuestros clientes para ofrecerle la mejor solución.
             </Paragraph>
             <div class="pt-8 items-center max-w-3xl md:max-w-[none]">
-                <Button variant={"primary"} className={"min-w-max text-white"}>
-                    <span class="font-bold">
-                        Contactanos
-                    </span>
-                </Button>
+                <div class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0">
+                    <BtnLink text="Contactanos" href="#cta" className="flex justify-center w-full sm:w-max" variant="primary"/>
+                </div>
             </div>
         </div>
     </Container>
